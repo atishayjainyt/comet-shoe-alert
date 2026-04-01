@@ -30,5 +30,5 @@ if check_stock():
 else:
     send_telegram(
         "❌ Comet Orange (UK 8) is still sold out.\n"
-        "I'll check again in 2 hours!"
+        "I'll check again and will let you know shortly!"
     )
