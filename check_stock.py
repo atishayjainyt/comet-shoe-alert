@@ -22,25 +22,11 @@ def check_stock():
 
 if check_stock():
     send_telegram(
-        "🚨 COMET ORANGE IS BACK IN STOCK!\n\n"
+        "COMET ORANGE IS BACK IN STOCK!\n\n"
         "Size: UK 8\n"
-        "👉 https://www.wearcomet.com/products/orange\n\n"
-        "Go go go! 🏃"
+        "Buy now: https://www.wearcomet.com/products/orange\n\n"
+        "Go go go!"
     )
     print("In stock! Alert sent!")
 else:
     print("Still sold out.")
-```
-
-4. Scroll down → click **"Commit changes"** → click **"Commit changes"** again
-
----
-
-**PART 3 — Create the automation file**
-
-This is the file that tells GitHub *when* to run your script automatically.
-
-1. Click the **"+"** icon or **"Add file"** → **"Create new file"**
-2. In the filename box, type **exactly** this (the slashes create folders automatically):
-```
-.github/workflows/check.yml
