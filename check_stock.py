@@ -22,11 +22,13 @@ def check_stock():
 
 if check_stock():
     send_telegram(
-        "COMET ORANGE IS BACK IN STOCK!\n\n"
+        "✅ COMET ORANGE IS BACK IN STOCK!\n\n"
         "Size: UK 8\n"
         "Buy now: https://www.wearcomet.com/products/orange\n\n"
         "Go go go!"
     )
-    print("In stock! Alert sent!")
 else:
-    print("Still sold out.")
+    send_telegram(
+        "❌ Comet Orange (UK 8) is still sold out.\n"
+        "I'll check again in 2 hours!"
+    )
